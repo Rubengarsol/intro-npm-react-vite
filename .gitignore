@@ -1,0 +1,24 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+# node_modules y dist se excluyen (generalmente en .gitignore o en herramientas de empaquetado) porque contienen archivos generados automáticamente que no deben guardarse en el control de versiones, no excluirlos podria superar los limites de GitHub por limites de tamaño  
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
