@@ -3,11 +3,8 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
-<<<<<<< Updated upstream
-=======
 import Confetti from 'react-confetti'
 import confetti from 'canvas-confetti'
->>>>>>> Stashed changes
 
 function App() {
   const [count, setCount] = useState(0)
