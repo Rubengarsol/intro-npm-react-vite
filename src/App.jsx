@@ -3,12 +3,18 @@ import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import './App.css'
+<<<<<<< Updated upstream
+=======
+import Confetti from 'react-confetti'
+import confetti from 'canvas-confetti'
+>>>>>>> Stashed changes
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
     <>
+    <Confetti recycle={false} />
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
@@ -28,6 +34,17 @@ function App() {
         >
           Count is {count}
         </button>
+        <button
+        onClick={() => {
+          confetti({
+            particleCount: 150,
+            spread: 80,
+            origin: { y: 0.6 }
+          });
+        }}
+      >
+        Lanzar Canvas Confetti
+      </button>
       </section>
 
       <div className="ticks"></div>
