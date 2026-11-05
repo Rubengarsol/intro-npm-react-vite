@@ -1,3 +1,4 @@
+
 import { useState } from 'react'
 import heroImg from './assets/hero.png'
 import reactLogo from './assets/react.svg'
@@ -11,18 +12,22 @@ function App() {
 
   return (
     <>
+      <PlanetScene />
+
       <section id="center">
         <div className="hero">
           <img src={heroImg} className="base" width="170" height="179" alt="" />
           <img src={reactLogo} className="framework" alt="React logo" />
           <img src={viteLogo} className="vite" alt="Vite logo" />
         </div>
+
         <div>
           <h1>Get started</h1>
           <p>
             Edit <code>src/App.jsx</code> and save to test <code>HMR</code>
           </p>
         </div>
+
         <button
           type="button"
           className="counter"
@@ -30,17 +35,19 @@ function App() {
         >
           Count is {count}
         </button>
+
         <button
-        onClick={() => {
-          confetti({
-            particleCount: 150,
-            spread: 80,
-            origin: { y: 0.6 }
-          });
-        }}
-      >
-        Lanzar Canvas Confetti
-      </button>
+          type="button"
+          onClick={() => {
+            confetti({
+              particleCount: 150,
+              spread: 80,
+              origin: { y: 0.6 }
+            })
+          }}
+        >
+          Lanzar Canvas Confetti
+        </button>
       </section>
 
       <div className="ticks"></div>
@@ -67,6 +74,7 @@ function App() {
             </li>
           </ul>
         </div>
+
         <div id="social">
           <svg className="icon" role="presentation" aria-hidden="true">
             <use href="/icons.svg#social-icon"></use>
@@ -76,11 +84,7 @@ function App() {
           <ul>
             <li>
               <a href="https://github.com/vitejs/vite" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#github-icon"></use>
                 </svg>
                 GitHub
@@ -88,11 +92,7 @@ function App() {
             </li>
             <li>
               <a href="https://chat.vite.dev/" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#discord-icon"></use>
                 </svg>
                 Discord
@@ -100,11 +100,7 @@ function App() {
             </li>
             <li>
               <a href="https://x.com/vite_js" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#x-icon"></use>
                 </svg>
                 X.com
@@ -112,11 +108,7 @@ function App() {
             </li>
             <li>
               <a href="https://bsky.app/profile/vite.dev" target="_blank">
-                <svg
-                  className="button-icon"
-                  role="presentation"
-                  aria-hidden="true"
-                >
+                <svg className="button-icon" role="presentation" aria-hidden="true">
                   <use href="/icons.svg#bluesky-icon"></use>
                 </svg>
                 Bluesky
