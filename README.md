@@ -1,16 +1,44 @@
-# React + Vite
+# Proyecto Vite + React
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Descripción
 
-Currently, two official plugins are available:
+Proyecto realizado con Vite y React para practicar la instalación de dependencias, el uso de componentes y el trabajo con ramas en Git.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Durante el proyecto se han probado tres componentes: React Confetti, Canvas Confetti y una escena 3D utilizando Three.js.
 
-## React Compiler
+## Ramas del proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- `master`: rama principal.
+- `react-confetti`: implementación de React Confetti.
+- `canvas-confetti`: implementación de Canvas Confetti.
+- `three`: implementación de la escena 3D con Three.js.
 
-## Expanding the Oxlint configuration
+## Capturas del proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### 1. React Confetti
+
+![React Confetti](capturas/react-confetti.png)
+
+### 2. Canvas Confetti
+
+![Canvas Confetti](capturas/canvas-confetti.png)
+
+### 3. Escena 3D con Three.js
+
+![Three.js](capturas/three.png)
+
+## Pregunta teórica
+
+**Si la carpeta `node_modules/` está excluida, ¿borrar una dependencia hace alguna acción sobre el repositorio? ¿Cuál?**
+
+Sí. Aunque `node_modules/` esté excluida del repositorio, al eliminar una dependencia se modifican los archivos `package.json` y `package-lock.json`.
+
+Estos cambios sí se guardan en Git mediante un commit. Así, el repositorio refleja que esa dependencia ya no forma parte del proyecto.
+
+## Web desplegada
+
+Pendiente de despliegue.
+
+## Repositorio de GitHub
+
+https://github.com/Rubengarsol/intro-npm-react-vite
